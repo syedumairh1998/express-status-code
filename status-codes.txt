@@ -1,0 +1,24 @@
+Success Response (200 OK):
+res.status(200).json({ success: true, message: 'Resource successfully retrieved' });
+
+Created Response (201 Created):
+res.status(201).json({ success: true, message: 'Resource successfully created' });
+
+No Content Response (204 No Content):
+res.status(204).send();
+
+
+Bad Request Response (400 Bad Request):
+res.status(400).json({ success: false, message: 'Bad request. Please check your input data.' });
+
+Unauthorized Response (401 Unauthorized):
+res.status(401).json({ success: false, message: 'Unauthorized. Please provide valid credentials.' });
+
+Forbidden Response (403 Forbidden):
+res.status(403).json({ success: false, message: 'Forbidden. You do not have permission to access this resource.' });
+
+Not Found Response (404 Not Found):
+res.status(404).json({ success: false, message: 'Resource not found.' });
+
+Server Error Response (500 Internal Server Error):
+res.status(500).json({ success: false, message: 'Internal server error. Please try again la
