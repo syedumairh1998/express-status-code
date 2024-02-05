@@ -21,4 +21,4 @@ Not Found Response (404 Not Found):
 res.status(404).json({ success: false, message: 'Resource not found.' });
 
 Server Error Response (500 Internal Server Error):
-res.status(500).json({ success: false, message: 'Internal server error. Please try again la
+res.status(500).json({ success: false, message: 'Internal server error. Please try again later.' });
